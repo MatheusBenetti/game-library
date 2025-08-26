@@ -5,10 +5,10 @@ import com.totex.gamelibrary.core.gateway.GameGateway;
 
 import java.util.List;
 
-public class FindGameCaseImpl implements FindGameCase {
+public class FindGamesCaseImpl implements FindGamesCase {
     private final GameGateway gameGateway;
 
-    public FindGameCaseImpl(GameGateway gameGateway) {
+    public FindGamesCaseImpl(GameGateway gameGateway) {
         this.gameGateway = gameGateway;
     }
 

@@ -4,6 +4,6 @@ import com.totex.gamelibrary.core.entities.Game;
 
 import java.util.List;
 
-public interface FindGameCase {
+public interface FindGamesCase {
     public List<Game> execute();
 }
