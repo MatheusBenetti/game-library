@@ -1,15 +1,13 @@
 package com.totex.gamelibrary.core.entities;
 
-import com.totex.gamelibrary.core.enums.ConsoleType;
-
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 public record Game(
         Long id,
         String title,
         String developer,
-        LocalDate releaseDate,
+        LocalDateTime releaseDate,
         String genre,
-        Set<ConsoleType> console
+        Set<String> console
 ) { }

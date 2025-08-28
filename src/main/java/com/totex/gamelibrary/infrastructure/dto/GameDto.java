@@ -1,15 +1,15 @@
 package com.totex.gamelibrary.infrastructure.dto;
 
-import com.totex.gamelibrary.core.enums.ConsoleType;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 public record GameDto(
         Long id,
         String title,
         String developer,
-        LocalDate releaseDate,
+        @JsonProperty("release_date") LocalDateTime releaseDate,
         String genre,
-        Set<ConsoleType> console
+        Set<String> console
 ) { }
