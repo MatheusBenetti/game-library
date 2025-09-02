@@ -9,5 +9,7 @@ public interface GameGateway {
 
     Game createGame(Game game);
     List<Game> findGames();
-    Game findGame();
+    Game findGame(Long id);
+    Optional<Game> findGameByTitle(String name);
+    boolean existsByTitle(String title);
 }
